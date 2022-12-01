@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+   /*============================================================================================================
+                         nav bar
+  =========================================================== ====================================*/
+   nav {
+    background: #000000;
+  height: 80px;
+  width: 100%;
+}
+
+
+
+
+label.logo {
+  color: rgb(93, 230, 29);
+  font-size: 35px;
+  line-height: 75px;
+  padding: 0 90px;
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+  margin-right: 30px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 74px;
+  margin: 0 3px;
+}
+nav ul li a {
+  color: rgb(93, 231, 81);
+  font-size: 16px;
+  padding: 6px 2px;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+a.active, a:hover {
+  background: #28a81c;
+  transition: .5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+  }
+  nav ul li a{
+      font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn {
+      display: block;
+  }
+  ul{
+  
+      width: 100%;
+      height: 100vh;
+      background: #09ff00;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+  nav ul li a {
+      font-size: 20px;
+  }
+  a:hover, a.active {
+      background: none;
+      color: #00ff40fa;
+  }
+  #check:checked ~ ul {
+      left: 0;
+  }
+}
+
+
+
+/*++++++++++======================================================
+conteudo da pagina
+=======================================================*/
+*{
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+   }
+   body {
+    
+    font-size: 1.3rem;
+    font-family: 'Oswald', sans-serif;
+    background: linear-gradient(90deg, #ffffff 0%, #2dc75b 100%);
+   }
+
+
+p {
+color: white;
+}
+
+   a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+   }
+   .main-header {
+    height: 65vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   }
+
+   .main-header h1 {
+    font-size: 4rem;
+    margin-bottom: -5rem;
+    line-height: 12.0rem;
+
+   }
+
+img {
+    height: 400px;
+    width: -500px;
+    padding: 2rem;
+}
+
+   .main-header h1 span {
+    color: #d61a1d;
+   }
+   .main-header p {
+    font-size: 2rem;
+   }
+
+   .container {
+    
+    max-width: 1050px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 -15rem;
+   }
+
+   .card {
+    border-radius: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 3rem;
+   }
+   .card h3 {
+    color: rgb(52, 201, 47);
+    margin-bottom: 2rem;
+   }
+   .card img {
+    border-radius: 50px;
+    height: 400px;
+    width: 500px;
+    padding: -2rem;
+
+   }
+   .card div {
+    padding: 2rem;
+   }
+   .card:nth-child(even) img {
+    order: 2;
+   }
+   .btn {
+    display: inline-block;
+    background: #000;
+    color: rgba(0, 255, 128, 0.897);
+    padding: 0.9rem 1.9rem;
+    margin-top: 2rem;
+    cursor: pointer;
+   }
+   .btn:hover {
+    opacity: 0.8;
+   }
+ 
+   
+
+   .inicial {
+    border-radius: 60px;
+    height: 25rem;
+    width: 45em;
+   }
+
+
